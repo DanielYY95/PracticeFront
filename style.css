@@ -1,52 +1,105 @@
-#entire{
-  position: relative;
+body{
+  margin: 0;
 }
 
- #backid{
-            box-sizing: border-box;
-            height: 100vh;
-            
-            background-image: url('images/main-banner.png');
-            background-size: cover;
+#id2{
+  width: 500px;
+  height: 700px;
+  background-color: brown;
+  position: relative;
 
-            line-height: 100vh;
-            text-align: center;
-            font-size: 5rem;
-            color: azure;
+}
 
-            
-        }
-        div span{
-            line-height: 100vh;
-            text-align: center;
-        }
+#id21{
+  width: 300px;
+  height: 200px;
+  background-color: blueviolet;
+}
 
-        #positionid{
-            width: 1440px;
-            height: 768px;
-            
-        }
+#id22{
+  width: 300px;
+  height: 200px;
+  background-color: blue;
+}
 
-        #positionimgid{
-            position: absolute;
-            z-index: -1;
-            
-        }
-        #positionidp{
-            color: azure;
-            font-size: 5rem;
-            margin: 0; 
-            line-height: 768px; 
-            
-            text-align: center; 
-            
-        }
+#id211{
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+}
 
 
-            /*
-            #positionidp{
-            margin: 0; // margin을 없애는 것이 아니라
-            line-height: 768px; 
-            //글자를 사이즈에 맞게 
-            text-align: center; 
-            //p태그는 div와 같이 블록이다. 그러니까 text-align을 자기 자신한테 줘도 먹는다.} */
+#id221{
+  width: 200px;
+  height: 200px;
+  background-color: chartreuse;
+  position: absolute;
+  top: 300px;
+}
+
+
+#id222{
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  position: relative;
+  top:300px;
+  left: 200px;
+} 
+
+
+#id223{
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+}
+
+
+
+
+
+
+
+/*
+
+#id2
+-> width, height 를 설정했기에 content를 저 크기만큼만 설정해준 것. 개발자도구에서 확인해보면 여전히 옆으로 삐져나와있다.(margin)
+
+
+
+#id221{
+  width: 200px;
+  height: 200px;
+  background-color: chartreuse;
+  position: absolute;
+  top: 300px;
+}
+
+/*
+position: ab 을 하고 top: 300px; 을 하면 문서의 흐름을 제끼고 부모가 기준이 아닌 맨 처음을 기준으로 오프셋 된 것이다.
+
+
+
+#id222{
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  position: relative;
+  top:300px;
+  left: 200px;
+} 
+// position: relative; 부모인 파란색 블록을 기준으로 top: 300이면 연두색 바로 밑으로, left 200px는 대각선 느낌으로..
+
+
+
+#id223{
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+}
+
+// 얘는 어디를 기준으로 ? 원래는 파란색에 붙어있어야하는데,,, 
+// position: relative 인 id222가 여전히 자리를 잡고있고, 시각적으로만 오프셋된 것이다. 그리고 시각적으로 보이는 그 자리의 공간을 차지하는 것은 아니다. 
+
+
+*/
